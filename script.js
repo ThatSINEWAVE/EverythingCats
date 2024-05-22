@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const breedOrigin = document.getElementById('breed-origin');
     const breedCoat = document.getElementById('breed-coat');
     const breedPattern = document.getElementById('breed-pattern');
+    const themeToggle = document.getElementById('theme-toggle');
 
     let lastChoice = '';  // Variable to store the last choice ('random' or 'breed')
     let lastBreed = '';   // Variable to store the last selected breed
@@ -37,7 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
         factText.textContent = fact;
         buttonContainer.classList.add('hidden');
         dropdownContainer.classList.add('hidden');
-        factContainer.classList.remove('hidden');
+        factContainer.classList.remove('hidden', 'fade-out');
+        factContainer.classList.add('fade-in');
         newButtons.classList.remove('hidden');
     };
 
@@ -60,6 +62,27 @@ document.addEventListener('DOMContentLoaded', () => {
         breedPattern.textContent = breed.pattern;
         breedDetails.classList.remove('hidden');
     };
+
+    const applyTheme = (theme) => {
+        document.body.classList.toggle('dark', theme === 'dark');
+        document.querySelector('.container').classList.toggle('dark', theme === 'dark');
+        themeToggle.checked = theme === 'dark';
+    };
+
+    const saveTheme = (theme) => {
+        localStorage.setItem('theme', theme);
+    };
+
+    const loadTheme = () => {
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        applyTheme(savedTheme);
+    };
+
+    themeToggle.addEventListener('change', () => {
+        const theme = themeToggle.checked ? 'dark' : 'light';
+        applyTheme(theme);
+        saveTheme(theme);
+    });
 
     randomFactButton.addEventListener('click', () => {
         lastChoice = 'random';
@@ -91,9 +114,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     chooseDifferentButton.addEventListener('click', () => {
-        factContainer.classList.add('hidden');
+        factContainer.classList.add('fade-out');
         newButtons.classList.add('hidden');
         breedDetails.classList.add('hidden');
         buttonContainer.classList.remove('hidden');
+
+        setTimeout(() => {
+            factContainer.classList.add('hidden');
+            factContainer.classList.remove('fade-out');
+        }, 500); // Wait for the fade-out animation to complete
     });
+
+    loadTheme();  // Load the theme when the page loads
 });
