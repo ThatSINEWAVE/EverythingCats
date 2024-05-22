@@ -4,6 +4,8 @@
 
 This project aims to provide you with a perfectly delightful experience all about cats. Whether you're a seasoned cat enthusiast or just starting to appreciate the wonders of feline companionship, EverythingCats has something for you.
 
+![EverythingCats](https://github.com/ThatSINEWAVE/EverythingCats/assets/133239148/bd53f9b7-1a7b-4727-ba95-3aa1c0d63904)
+
 </div>
 
 ## Features
