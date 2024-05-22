@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const fetchBreedFact = async (breed) => {
-        // If there's an API that supports breed-specific facts, use it here
+        // If there's an API that supports breed-specific facts, it will be used here
         // For now, we'll use the same random fact API
         return fetchRandomFact();
     };
