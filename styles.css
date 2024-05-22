@@ -1,4 +1,11 @@
 /* styles.css */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling */
+}
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -51,9 +58,9 @@ body.dark {
     background: transparent;
     padding: 20px;
     border-radius: 10px;
-    max-width: 600px;  /* Limit the width */
-    width: 100%;       /* Ensure it fills available space up to max-width */
-    margin: 20px;      /* Add some margin for small screens */
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
     transition: background-color 0.3s;
 }
 
@@ -94,12 +101,17 @@ button:active {
 
 #dropdown-container {
     margin-top: 20px;
+    border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
 }
 
 #breed-select {
     padding: 10px;
     font-size: 16px;
     margin-right: 10px;
+    border-radius: 5px;
 }
 
 #breed-details {
