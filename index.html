@@ -1,40 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat Facts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+      </label>
+    </header>
     <div class="container">
-        <h1>Cat Facts</h1>
-        <div id="button-container">
-            <button id="random-fact">Get Random Fact</button>
-            <button id="breed-fact">Get Fact by Breed</button>
+      <div class="cat-icon">
+        <img src="cat-icon.gif" alt="Cat Icon">
+      </div>
+      <h1>Everything Cats</h1>
+      <div id="button-container">
+        <button id="random-fact">Get Random Fact</button>
+        <button id="breed-fact">Get Fact by Breed</button>
+      </div>
+      <div id="dropdown-container" class="hidden">
+        <label for="breed-select">Choose a breed:</label>
+        <select id="breed-select">
+          <!-- Options will be displayed here -->
+        </select>
+        <button id="get-breed-fact">Get Fact</button>
+      </div>
+      <div id="fact-container" class="hidden">
+        <div id="breed-details" class="hidden">
+          <h2 id="breed-name"></h2>
+          <p>
+            <strong>Country:</strong>
+            <span id="breed-country"></span>
+          </p>
+          <p>
+            <strong>Origin:</strong>
+            <span id="breed-origin"></span>
+          </p>
+          <p>
+            <strong>Coat:</strong>
+            <span id="breed-coat"></span>
+          </p>
+          <p>
+            <strong>Pattern:</strong>
+            <span id="breed-pattern"></span>
+          </p>
         </div>
-        <div id="dropdown-container" class="hidden">
-            <label for="breed-select">Choose a breed:</label>
-            <select id="breed-select">
-                <!-- Options will be populated dynamically -->
-            </select>
-            <button id="get-breed-fact">Get Fact</button>
+        <p id="fact"></p>
+        <div id="new-buttons" class="hidden">
+          <button id="new-fact">Get Another Fact</button>
+          <button id="choose-different">Choose Different Type</button>
         </div>
-        <div id="fact-container" class="hidden">
-            <div id="breed-details" class="hidden">
-                <h2 id="breed-name"></h2>
-                <p><strong>Country:</strong> <span id="breed-country"></span></p>
-                <p><strong>Origin:</strong> <span id="breed-origin"></span></p>
-                <p><strong>Coat:</strong> <span id="breed-coat"></span></p>
-                <p><strong>Pattern:</strong> <span id="breed-pattern"></span></p>
-            </div>
-            <p id="fact"></p>
-            <div id="new-buttons" class="hidden">
-                <button id="new-fact">Get Another Fact</button>
-                <button id="choose-different">Choose Different Type</button>
-            </div>
-        </div>
+      </div>
     </div>
+    <footer>
+      <a href="https://discord.com" target="_blank">
+        <i class="fab fa-discord"></i>
+      </a>
+      <a href="https://www.buymeacoffee.com" target="_blank">
+        <i class="fas fa-heart"></i>
+      </a>
+      <a href="https://github.com" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
