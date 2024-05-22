@@ -47,7 +47,7 @@
       "country": "Arabian Peninsula",
       "origin": "Natural",
       "coat": "Short",
-      "pattern": ""
+      "pattern": "Unknown"
     },
     {
       "breed": "Australian Mist",
@@ -59,7 +59,7 @@
     {
       "breed": "Asian",
       "country": "developed in the United Kingdom (founding stock from Asia)",
-      "origin": "",
+      "origin": "Unknown",
       "coat": "Short",
       "pattern": "Evenly solid"
     },
@@ -82,7 +82,7 @@
       "country": "United States",
       "origin": "Crossbreed",
       "coat": "Hairless/Furry down",
-      "pattern": ""
+      "pattern": "Unknown"
     },
     {
       "breed": "Bengal",
@@ -115,7 +115,7 @@
     {
       "breed": "British Semi-longhair",
       "country": "United Kingdom",
-      "origin": "",
+      "origin": "Unknown",
       "coat": "Medium",
       "pattern": "All"
     },
@@ -129,9 +129,9 @@
     {
       "breed": "British Longhair",
       "country": "United Kingdom",
-      "origin": "",
+      "origin": "Unknown",
       "coat": "Long",
-      "pattern": ""
+      "pattern": "Unknown"
     },
     {
       "breed": "Burmese",
@@ -145,7 +145,7 @@
       "country": "United Kingdom",
       "origin": "Crossbreed",
       "coat": "Short/Long",
-      "pattern": ""
+      "pattern": "Unknown"
     },
     {
       "breed": "California Spangled",
@@ -157,9 +157,9 @@
     {
       "breed": "Chantilly-Tiffany",
       "country": "United States",
-      "origin": "",
-      "coat": "",
-      "pattern": ""
+      "origin": "Unknown",
+      "coat": "Unknown",
+      "pattern": "Unknown"
     },
     {
       "breed": "Chartreux",
@@ -184,10 +184,10 @@
     },
     {
       "breed": "Colorpoint Shorthair",
-      "country": "",
-      "origin": "",
+      "country": "Unknown",
+      "origin": "Unknown",
       "coat": "Short",
-      "pattern": ""
+      "pattern": "Unknown"
     },
     {
       "breed": "Cornish Rex",
@@ -201,7 +201,7 @@
       "country": "United Kingdom (Isle of Man)",
       "origin": "Natural/Mutation",
       "coat": "Long",
-      "pattern": ""
+      "pattern": "Unknown"
     },
     {
       "breed": "Cyprus",
@@ -220,9 +220,9 @@
     {
       "breed": "Donskoy, or Don Sphynx",
       "country": "Russia",
-      "origin": "",
+      "origin": "Unknown",
       "coat": "Hairless",
-      "pattern": ""
+      "pattern": "Unknown"
     },
     {
       "breed": "Dragon Li",
@@ -233,9 +233,9 @@
     },
     {
       "breed": "Dwarf cat, or Dwelf",
-      "country": "",
+      "country": "Unknown",
       "origin": "Crossbreed",
-      "coat": "",
+      "coat": "Unknown",
       "pattern": "Hairless"
     },
     {
@@ -250,7 +250,7 @@
       "country": "Finland and Sweden",
       "origin": "Natural",
       "coat": "Short",
-      "pattern": ""
+      "pattern": "Unknown"
     },
     {
       "breed": "Exotic Shorthair",
@@ -271,12 +271,12 @@
       "country": "East Germany",
       "origin": "Mutation",
       "coat": "Rex",
-      "pattern": ""
+      "pattern": "Unknown"
     },
     {
       "breed": "Havana Brown",
       "country": "United Kingdom",
-      "origin": "",
+      "origin": "Unknown",
       "coat": "Short",
       "pattern": "Solid"
     },
@@ -312,8 +312,8 @@
       "breed": "Karelian Bobtail",
       "country": "Western Russia",
       "origin": "Natural",
-      "coat": "",
-      "pattern": ""
+      "coat": "Unknown",
+      "pattern": "Unknown"
     },
     {
       "breed": "Khao Manee",
@@ -348,7 +348,7 @@
       "country": "Eastern Russia,Japan",
       "origin": "Natural",
       "coat": "Short/Long",
-      "pattern": ""
+      "pattern": "Unknown"
     },
     {
       "breed": "LaPerm",
@@ -396,20 +396,20 @@
       "breed": "Munchkin",
       "country": "United States",
       "origin": "Mutation",
-      "coat": "",
-      "pattern": ""
+      "coat": "Unknown",
+      "pattern": "Unknown"
     },
     {
       "breed": "Nebelung",
       "country": "United States",
-      "origin": "",
+      "origin": "Unknown",
       "coat": "Semi-long",
       "pattern": "Solid"
     },
     {
       "breed": "Napoleon",
-      "country": "",
-      "origin": "",
+      "country": "Unknown",
+      "origin": "Unknown",
       "coat": "Long/short",
       "pattern": "Varied"
     },
@@ -430,37 +430,37 @@
     {
       "breed": "Ojos Azules",
       "country": "United States",
-      "origin": "",
-      "coat": "",
-      "pattern": ""
+      "origin": "Unknown",
+      "coat": "Unknown",
+      "pattern": "Unknown"
     },
     {
       "breed": "Oregon Rex",
       "country": "United States",
       "origin": "Mutation",
       "coat": "Rex",
-      "pattern": ""
+      "pattern": "Unknown"
     },
     {
       "breed": "Oriental Bicolor",
-      "country": "",
-      "origin": "",
-      "coat": "",
+      "country": "Unknown",
+      "origin": "Unknown",
+      "coat": "Unknown",
       "pattern": "Bicolor"
     },
     {
       "breed": "Oriental Shorthair",
-      "country": "",
-      "origin": "",
+      "country": "Unknown",
+      "origin": "Unknown",
       "coat": "Short",
       "pattern": "All but colorpoint"
     },
     {
       "breed": "Oriental Longhair",
-      "country": "",
-      "origin": "",
+      "country": "Unknown",
+      "origin": "Unknown",
       "coat": "Semi-long",
-      "pattern": ""
+      "pattern": "Unknown"
     },
     {
       "breed": "PerFoldæ(Experimental Breed - WCF)",
@@ -502,7 +502,7 @@
       "country": "Indonesia",
       "origin": "Natural",
       "coat": "Short",
-      "pattern": ""
+      "pattern": "Unknown"
     },
     {
       "breed": "Ragamuffin",
@@ -530,7 +530,7 @@
       "country": "Australia",
       "origin": "Crossbreed",
       "coat": "Short",
-      "pattern": ""
+      "pattern": "Unknown"
     },
     {
       "breed": "Sam Sawet",
@@ -572,7 +572,7 @@
       "country": "France",
       "origin": "Natural",
       "coat": "Short",
-      "pattern": ""
+      "pattern": "Unknown"
     },
     {
       "breed": "Siamese",
@@ -675,9 +675,9 @@
     {
       "breed": "Ukrainian Levkoy",
       "country": "Ukraine",
-      "origin": "",
+      "origin": "Unknown",
       "coat": "Hairless",
-      "pattern": ""
+      "pattern": "Unknown"
     },
     {
       "breed": "York Chocolate",
