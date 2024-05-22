@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Facts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cat Facts</h1>
+        <div id="button-container">
+            <button id="random-fact">Get Random Fact</button>
+            <button id="breed-fact">Get Fact by Breed</button>
+        </div>
+        <div id="dropdown-container" class="hidden">
+            <label for="breed-select">Choose a breed:</label>
+            <select id="breed-select">
+                <!-- Options will be populated dynamically -->
+            </select>
+            <button id="get-breed-fact">Get Fact</button>
+        </div>
+        <div id="fact-container" class="hidden">
+            <p id="fact"></p>
+            <div id="new-buttons" class="hidden">
+                <button id="new-fact">Get Another Fact</button>
+                <button id="choose-different">Choose Different Type</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
