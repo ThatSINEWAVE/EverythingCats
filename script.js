@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const dropdownContainer = document.getElementById('dropdown-container');
     const breedSelect = document.getElementById('breed-select');
     const getBreedFactButton = document.getElementById('get-breed-fact');
+    const breedDetails = document.getElementById('breed-details');
+    const breedName = document.getElementById('breed-name');
+    const breedCountry = document.getElementById('breed-country');
+    const breedOrigin = document.getElementById('breed-origin');
+    const breedCoat = document.getElementById('breed-coat');
+    const breedPattern = document.getElementById('breed-pattern');
 
     let lastChoice = '';  // Variable to store the last choice ('random' or 'breed')
     let lastBreed = '';   // Variable to store the last selected breed
@@ -46,6 +52,15 @@ document.addEventListener('DOMContentLoaded', () => {
         breedSelect.innerHTML = breeds.map(breed => `<option value="${breed.breed}">${breed.breed}</option>`).join('');
     };
 
+    const displayBreedDetails = (breed) => {
+        breedName.textContent = breed.breed;
+        breedCountry.textContent = breed.country;
+        breedOrigin.textContent = breed.origin;
+        breedCoat.textContent = breed.coat;
+        breedPattern.textContent = breed.pattern;
+        breedDetails.classList.remove('hidden');
+    };
+
     randomFactButton.addEventListener('click', () => {
         lastChoice = 'random';
         displayFact(fetchRandomFact());
@@ -57,10 +72,13 @@ document.addEventListener('DOMContentLoaded', () => {
         dropdownContainer.classList.remove('hidden');
     });
 
-    getBreedFactButton.addEventListener('click', () => {
+    getBreedFactButton.addEventListener('click', async () => {
         const selectedBreed = breedSelect.value;
         lastChoice = 'breed';
         lastBreed = selectedBreed;
+        const breeds = await loadBreeds();
+        const breed = breeds.find(b => b.breed === selectedBreed);
+        displayBreedDetails(breed);
         displayFact(fetchBreedFact(selectedBreed));
     });
 
@@ -75,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
     chooseDifferentButton.addEventListener('click', () => {
         factContainer.classList.add('hidden');
         newButtons.classList.add('hidden');
+        breedDetails.classList.add('hidden');
         buttonContainer.classList.remove('hidden');
     });
 });
